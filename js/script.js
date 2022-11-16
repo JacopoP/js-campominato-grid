@@ -3,6 +3,7 @@ const container=document.getElementById("container");
 document.getElementById("generate").addEventListener("click",
     function(){
         container.classList.remove("hide");
+        container.innerHTML="";
         const n=parseInt(document.getElementById("difficulty").value);
         for(let i=0; i<n*n; i++){
             const newElement = createBox();
